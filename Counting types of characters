@@ -1,0 +1,30 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        String str="$anjaY07";
+        int l=0,u=0,s=0,d=0;
+        for(int i=0;i<str.length();i++){
+            char ch=str.charAt(i);
+            
+            if(Character.isUpperCase(ch))
+            {
+                u++;
+            }
+            else if(Character.isLowerCase(ch))
+            {
+                l++;
+            }
+            else if(Character.isDigit(ch))
+            {
+                d++;
+            }else 
+            {
+                s++;
+            }
+        }
+        System.out.println("No of Upper cases :"+ u);
+        System.out.println("No of lower cases :"+ l);
+        System.out.println("No of Digits :"+ d);
+        System.out.println("No of Special Character :"+ s);
+    }
+}
