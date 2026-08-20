@@ -1,0 +1,70 @@
+class common{
+    static String pm="Narendra Modi";
+}
+
+class tn{
+    static String CM="Vijay";
+    String S_Name;
+    String D_Name;
+    int population;
+    
+    public void set_dim(String a, String b, int c){
+        S_Name=a;
+        D_Name=b;
+        population=c;
+    }
+    
+    public void display(){
+        System.out.println("1.Prime minister :"+common.pm);
+        System.out.println("2.Chief minister :"+CM);
+        System.out.println("3.State Name :"+S_Name);
+        System.out.println("4.District :"+D_Name);
+        System.out.println("5.Population :"+population);
+        System.out.println("----------------------------------------");
+    }
+}
+
+class an{
+    static String CM="Max";
+    String S_Name;
+    String D_Name;
+    int population;
+    
+    public void set_dim(String a1, String b1, int c1){
+        S_Name=a1;
+        D_Name=b1;
+        population=c1;
+    }
+    
+    public void display(){
+        System.out.println("1.Prime minister :"+common.pm);
+        System.out.println("2.Chief minister :"+CM);
+        System.out.println("3.State Name :"+S_Name);
+        System.out.println("4.District :"+D_Name);
+        System.out.println("5.Population :"+population);
+        System.out.println("----------------------------------------");
+    }
+}
+
+public class Main{
+    public static void main(String[] args){
+        tn a=new tn();
+        tn b=new tn();
+        tn c=new tn();
+        an a1=new an();
+        an b1=new an();
+        an c1=new an();
+
+        a.set_dim("Tamilnadu", "Chennai", 10000000);
+        b.set_dim("Andra", "Chegalpettu", 10000);
+
+        a.display();
+        b.display();
+
+        a1.set_dim("Andra", "Papi", 200);
+        b1.set_dim("Andra", "Popi", 300);
+
+        a1.display();
+        b1.display();
+    }
+}
